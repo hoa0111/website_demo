@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="vi" class="h-100">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" type="text/css">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Custom css - Các file css do chúng ta tự viết -->
+    <link rel="stylesheet" href="assets/css/app.css" type="text/css">
+    <link rel="stylesheet" href="../themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<style>
+    body {
+        height: auto;
+    }
+    a {
+        color: #333;
+    }
+    hr {
+        border: 1px solid #fff;
+    }
+</style>
+<body>
+    <!-- header -->
+    <div id="header">
+        <div class="row">
+            <div class="col-md-4">
+                <ul>
+                    <li><a href="#">Nam</a></li>
+                    <li><a href="#">Nữ</a></li>
+                    <li><a href="#">Trẻ em</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <img src="../assets/img/logo.jpg" alt="">
+            </div>
+            <div class="col-md-4" style="padding-left:144px;">
+                <a href="../loai_hang/index.html"><i class="ti-user"></i></a>
+                <a href="cart.html"><i class="ti-shopping-cart"></i></a>
+                <div class="search">
+                    <i class="ti-search">
+                        <input type="text" name="" id="" value="" placeholder="search...">
+                    </i>
+                </div>
+            </div>
+        </div>
+
+        <!-- menu -->
+        <div id="menu">
+            <ul>
+                <li><a href="../../index.php">Trang chủ</a></li>
+                <!-- <li>
+                    <a href="#">Sản phẩm</a>
+                        <ul class="submenu">
+                            <li><a href="#">Áo hoodie trơn</a></li>
+                            <li><a href="#">Áo hoodie có Zip</a></li>
+                            <li><a href="#">Áo nỉ Basic</a></li>
+                            <li><a href="#">Áo nỉ họa tiết</a></li>
+                            <li><a href="#">Áo hoodie, áo nỉ theo mùa</a></li>
+                        </ul>
+                </li> -->
+                <li><a href="../about.html">Giới thiệu</a></li>
+                <li><a href="#">Liên hệ</a></li>
+                <li><a href="#">Fanpage</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- end header -->
+
+    <main role="main">
+        <!-- Block content - Đục lỗ trên giao diện bố cục chung, đặt tên là `content` -->
+        <div class="container mt-4">
+            <div id="thongbao" class="alert alert-danger d-none face" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+
+            <h1 class="text-center">Giỏ hàng</h1>
+            <div class="row">
+                <div class="col col-md-12">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th>Ảnh đại diện</th>
+                                <th>Tên sản phẩm</th>
+                                <th>Số lượng</th>
+                                <th>Đơn giá</th>
+                                <th>Thành tiền</th>
+                                <th>Chức năng</th>
+                            </tr>
+                        </thead>
+                        <tbody id="datarow">
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <img src="assets/img/product/hoodie-chu-cun1.jpg" class="hinhdaidien">
+                                </td>
+                                <td>Hoodie chú cún</td>
+                                <td class="text-right">2</td>
+                                <td class="text-right">1.200.000</td>
+                                <td class="text-right">1.000.000</td>
+                                <td>
+                                    <!-- Nút xóa, bấm vào sẽ xóa thông tin dựa vào khóa chính `sp_ma` -->
+                                    <a id="delete_1" data-sp-ma="2" class="btn btn-danger btn-delete-sanpham">
+                                        <i class="fa fa-trash" aria-hidden="true"></i> Xóa
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    <img src="assets/img/product/hoodie-chu-meo1.jpg" class="hinhdaidien">
+                                </td>
+                                <td>Hoodie hello kitty</td>
+                                <td class="text-right">1</td>
+                                <td class="text-right">2.000.000</td>
+                                <td class="text-right">900.000</td>
+                                <td>
+                                    <!-- Nút xóa, bấm vào sẽ xóa thông tin dựa vào khóa chính `sp_ma` -->
+                                    <a id="delete_2" data-sp-ma="6" class="btn btn-danger btn-delete-sanpham">
+                                        <i class="fa fa-trash" aria-hidden="true"></i> Xóa
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>
+                                    <img src="assets/img/product/ni-tho.jpg" class="hinhdaidien">
+                                </td>
+                                <td>Áo nỉ hình thỏ</td>
+                                <td class="text-right">3</td>
+                                <td class="text-right">2.850.000</td>
+                                <td class="text-right">2.700.000</td>
+                                <td>
+                                    <!-- Nút xóa, bấm vào sẽ xóa thông tin dựa vào khóa chính `sp_ma` -->
+                                    <a id="delete_3" data-sp-ma="4" class="btn btn-danger btn-delete-sanpham">
+                                        <i class="fa fa-trash" aria-hidden="true"></i> Xóa
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <a href="../index.html" class="btn btn-warning btn-md"><i class="fa fa-arrow-left"
+                            aria-hidden="true"></i>&nbsp;Quay
+                        về trang chủ</a>
+                    <a href="checkout.html" class="btn btn-primary btn-md"><i
+                            class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Thanh toán</a>
+                </div>
+            </div>
+        </div>
+        <!-- End block content -->
+    </main>
+
+    <!-- footer -->
+    <div id="footer">
+        <h1>FourU</h1>
+        <div class="row">
+            <div class="col-md-3">
+                <h3>Khám phá cùng FourU</h3>
+                <ul>
+                    <li><a href="#">Áo hoodie có Zip</a></li>
+                    <li><a href="#">Áo hoodie</a></li>
+                    <li><a href="#">Áo nỉ basic</a></li>
+                    <li><a href="#">Áo nỉ họa tiết</a></li>
+                    <li><a href="#">Áo hoodie, áo nỉ theo mùa</a></li>
+                    <li><a href="#">Bảng quy đổi kích cỡ</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h3>Thông tin</h3>
+                <ul>
+                    <li><a href="#">Giao hàng</a></li>
+                    <li><a href="#">Trợ giúp</a></li>
+                    <li><a href="#">Tìm kiếm</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h3>Tin tức</h3>
+                <ul>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                    <li><a href="#">Cơ hội việc làm</a></li>
+                    <li><a href="#">Khuyến mãi</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h3>Dịch vụ trực tuyến</h3>
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="#">Sản phẩm</a></li>
+                    <li><a href="about.html">Giới thiệu</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                    <li><a href="#">Fanpage</a></li>
+                </ul>
+            </div>
+        </div>
+        <br><hr>
+        <div class="by">
+            © FourU
+        </div>
+    </div>
+    <!-- end footer -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popperjs/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Custom script - Các file js do mình tự viết -->
+    <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>

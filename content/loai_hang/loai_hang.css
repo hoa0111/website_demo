@@ -1,0 +1,133 @@
+form .form {
+    border: 1px solid #333;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+form h1 {
+}
+
+form {
+    width: 30%;
+    text-align: center;
+    margin-left: 460px;
+}
+
+form input {
+    width: 50%;
+    padding: 8px;
+}
+
+.btn input {
+    /* display: inline-block; */
+    width: 20% !important;
+}
+
+ul li {
+    display: inline-block;
+    list-style: none;
+    /* padding: 8px 12px; */
+    
+}
+
+ul li:hover {
+    cursor: pointer;
+}
+
+
+ul li:hover a {
+    text-decoration: none;
+    color: #333;
+    background-color: rgb(224, 224, 224);
+}
+ul li a {
+    text-decoration: none;
+    padding: 12px 20px;
+}
+
+#list table {
+    width: 70%;
+    /* border-radius: 50px; */
+    /* border: none; */
+    font-size: 18px;
+}
+
+#list table tr td {
+    padding: 8px 20px;
+}
+
+#list table .title td {
+    text-align: center;
+    font-weight: bold;
+}
+
+#list table tr .stt {
+    text-align: center;
+}
+
+#list table tr .thao_tac a {
+    padding: 6px 20px;
+    background-color: #ccc;
+    text-align: center;
+    text-decoration: none;
+}
+
+#list table tr .thao_tac {
+    text-align: center;
+}
+
+#list table tr .thao_tac .del {
+    margin-left: 8px;
+    background-color: red;
+    color: #fff;
+}
+
+#list table tr .thao_tac .edit {
+    /* margin-left: 8px; */
+    background-color: green;
+    color: #fff;
+}
+
+.mhh {
+    width: 18%;
+}
+
+.thh {
+    width: 45%;
+}
+
+.nn {
+    width: 15%;
+}
+
+.tt {
+    width: 22%;
+}
+
+/* footer */
+#footer {
+    padding: 60px 100px 40px 100px;
+    background-color: #000;
+    color: #fff;
+    margin-top: 100px;
+}
+
+#footer h1 {
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: bold;
+}
+
+#footer .row .col-md-3 ul li a {
+    color: #9d9d9d;
+}
+
+#footer .row .col-md-3 ul li {
+    display: block;
+    padding: 6px;
+}
+
+#footer .by {
+    text-align: center;
+    font-style: italic;
+}
